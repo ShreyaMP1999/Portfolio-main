@@ -21,7 +21,7 @@ async def get_personal_info():
 
 @router.post("/", response_model=PersonalInfo)
 async def create_personal_info(personal_info: PersonalInfoCreate):
-    """Create personal information"""
+    """Create personal information (if not exists)"""
     # Check if personal info already exists
     existing = await personal_info_collection.find_one({"is_active": True})
     if existing:

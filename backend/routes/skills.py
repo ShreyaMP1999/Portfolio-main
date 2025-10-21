@@ -9,8 +9,9 @@ router = APIRouter(prefix="/api/skills", tags=["skills"])
 @router.get("/", response_model=List[Skill])
 async def get_all_skills():
     """Get all skills by categories."""
+    # skills = await skill_collection.find({"is_active": True}).sort("order", 1).to_list(1000)
     skills = await skill_collection.find({"is_active": True}).sort("order", 1).to_list(1000)
-    
+
     # Convert MongoDB _id to id
     for skill in skills:
         skill["id"] = str(skill["_id"])

@@ -12,9 +12,9 @@ async def get_all_skills():
     skills = await skill_collection.find({"is_active": True}).sort("order", 1).to_list(1000)
     
     # Convert MongoDB _id to id
-    # for skill in skills:
-    #     skill["id"] = str(skill["_id"])
-    #     del skill["_id"]
+    for skill in skills:
+        skill["id"] = str(skill["_id"])
+        del skill["_id"]
     
     return [Skill(**skill) for skill in skills]
 

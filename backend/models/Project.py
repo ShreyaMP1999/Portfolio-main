@@ -3,17 +3,17 @@ from typing import List, Optional
 from datetime import datetime
 import uuid
 
-class ProjectBase(BaseModel):
-    title: str
-    description: str
-    long_description: str
-    technologies: List[str]
-    features: List[str]
-    github: str
-    demo: str
-    image: str
-    category: str
-    order: int = 0
+# class ProjectBase(BaseModel):
+#     title: str
+#     description: str
+#     long_description: str
+#     technologies: List[str]
+#     features: List[str]
+#     github: str
+#     demo: str
+#     image: str
+#     category: str
+#     order: int = 0
 
 class ProjectCreate(ProjectBase):
     pass

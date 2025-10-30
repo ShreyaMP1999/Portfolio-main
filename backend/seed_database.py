@@ -5,7 +5,7 @@ from database import (
 )
 from models.PersonalInfo import PersonalInfo
 from models.Experience import Experience
-from models.Project import Project
+# from models.Project import Project
 from models.Skill import Skill
 from models.Achievement import Achievement
 from models.Education import Education

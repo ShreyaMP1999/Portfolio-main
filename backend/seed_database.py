@@ -215,13 +215,13 @@ async def seed_database():
     print("Seeded education data")
     
     # Seed projects
-    # for project_data in mock_projects:
-    #     project_obj = Project(**project_data)
-    #     project_dict = project_obj.dict()
-    #     project_dict["_id"] = project_dict["id"]
-    #     del project_dict["id"]
-    #     await project_collection.insert_one(project_dict)
-    # print("Seeded projects data")
+    for project_data in mock_projects:
+        project_obj = Project(**project_data)
+        project_dict = project_obj.dict()
+        project_dict["_id"] = project_dict["id"]
+        del project_dict["id"]
+        await project_collection.insert_one(project_dict)
+    print("Seeded projects data")
     
     # Seed skills
     for skill_data in mock_skills:

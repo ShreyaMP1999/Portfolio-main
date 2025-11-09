@@ -11,10 +11,10 @@ class SkillBase(BaseModel):
 class SkillCreate(SkillBase):
     pass
 
-class SkillUpdate(BaseModel):
-    category: Optional[str] = None
-    skills: Optional[List[str]] = None
-    order: Optional[int] = None
+# class SkillUpdate(BaseModel):
+#     category: Optional[str] = None
+#     skills: Optional[List[str]] = None
+#     order: Optional[int] = None
 
 class Skill(SkillBase):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))

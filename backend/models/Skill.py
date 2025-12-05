@@ -13,7 +13,7 @@ class SkillCreate(SkillBase):
 
 class SkillUpdate(BaseModel):
     category: Optional[str] = None
-    # skills: Optional[List[str]] = None
+    skills: Optional[List[str]] = None
     order: Optional[int] = None
 
 class Skill(SkillBase):

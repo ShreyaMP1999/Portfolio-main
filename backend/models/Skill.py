@@ -8,8 +8,8 @@ class SkillBase(BaseModel):
     skills: List[str]
     order: int = 0
 
-# class SkillCreate(SkillBase):
-#     pass
+class SkillCreate(SkillBase):
+    pass
 
 class SkillUpdate(BaseModel):
     category: Optional[str] = None

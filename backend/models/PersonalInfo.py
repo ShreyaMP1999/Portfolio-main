@@ -3,6 +3,7 @@ from typing import Optional
 from datetime import datetime
 import uuid
 
+
 class PersonalInfoBase(BaseModel):
     name: str
     title: str
@@ -14,8 +15,10 @@ class PersonalInfoBase(BaseModel):
     bio: str
     tagline: str
 
+
 class PersonalInfoCreate(PersonalInfoBase):
     pass
+
 
 class PersonalInfoUpdate(BaseModel):
     name: Optional[str] = None
@@ -27,6 +30,7 @@ class PersonalInfoUpdate(BaseModel):
     github: Optional[str] = None
     bio: Optional[str] = None
     tagline: Optional[str] = None
+
 
 class PersonalInfo(PersonalInfoBase):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))

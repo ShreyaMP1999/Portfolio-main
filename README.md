@@ -2,7 +2,7 @@
 
 A modern, dynamic, and responsive portfolio website showcasing my journey as a Full Stack Developer and AI/ML Engineer. Built with cutting-edge technologies and featuring a complete backend API for dynamic content management.
 
-![Portfolio Preview](https://via.placeholder.com/800x400/2563eb/ffffff?text=Portfolio+Website+Preview)
+<!-- ![Portfolio Preview](https://via.placeholder.com/800x400/2563eb/ffffff?text=Portfolio+Website+Preview)
 
 ## 🌟 Live Demo
 
@@ -346,4 +346,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ If you found this project helpful, please consider giving it a star!**
 
-Made with ❤️ and lots of ☕ by Shreya Padaganur
+Made with ❤️ and lots of ☕ by Shreya Padaganur -->
